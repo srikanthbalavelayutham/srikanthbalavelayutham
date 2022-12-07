@@ -27,4 +27,8 @@ class Bank
 	{
 		System.out.println("Check");
 	}
+	private void closeAccount()
+	{
+		System.out.println("Account closed");
+	}
 }
