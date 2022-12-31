@@ -6,7 +6,9 @@ public class Fibbonacci_Series {
 	
 	static int n1=0,n2=1,n3=0;
 	
-	static void fibbonacci(int fibbcount)
+	
+	
+	static void fibbonacci(int n1,int n2,int fibbcount)
 	{
 		if(fibbcount>0)
 		{
@@ -15,7 +17,7 @@ public class Fibbonacci_Series {
 			n2=n3;
 			
 			System.out.print(" "+n3);
-			fibbonacci(fibbcount-1);
+			fibbonacci(n1,n2,fibbcount-1);
 		}
 	}
 
@@ -73,7 +75,7 @@ public class Fibbonacci_Series {
 		
 		System.out.print(n1+" "+n2);
 		
-		fibbonacci(fibbcount-2);
+		fibbonacci(n1,n2,fibbcount-2);
 		
 		// Program to find fibbonacci series for given count  
 		
